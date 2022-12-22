@@ -49,6 +49,7 @@ header {
 header nav {
   display: flex;
   gap: 20px;
+  margin-right: 34px;
 }
 header nav a {
   color: var(--black-main);
@@ -108,8 +109,14 @@ header .menu-bar-icon {
     opacity: 1;
   }
 }
+@media (max-width: 1020px) {
+  header nav {
+    margin-right: 0;
+  }
+}
 .introduction-section {
-  background-color: var(--black-main);
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle, rgb(2, 1, 11) 0%, rgb(62, 6, 23) 57%, rgb(30, 26, 29) 97%);
   color: var(--white-main);
   display: grid;
   grid-template-columns: 1fr;
@@ -119,6 +126,16 @@ header .menu-bar-icon {
 .introduction-section h1 {
   font-size: 3em;
   font-weight: 500;
+}
+
+.guitar-section {
+  background-color: var(--white-main);
+}
+.guitar-section .guitar-text {
+  max-width: 21em;
+  text-align: justify;
+  border: 1px black solid;
+  padding: 1em;
 }
 
 .section {
