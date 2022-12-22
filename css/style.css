@@ -37,6 +37,7 @@ header {
   background-color: var(--white-main);
   border-bottom: var(--black-main) 2px solid;
   position: fixed;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -116,7 +117,7 @@ header .menu-bar-icon {
 }
 .introduction-section {
   background: rgb(2, 0, 36);
-  background: radial-gradient(circle, rgb(2, 1, 11) 0%, rgb(62, 6, 23) 57%, rgb(30, 26, 29) 97%);
+  background: radial-gradient(circle, rgb(2, 1, 11) 0%, rgb(8, 6, 62) 57%, rgb(30, 26, 29) 97%);
   color: var(--white-main);
   display: grid;
   grid-template-columns: 1fr;
@@ -128,14 +129,32 @@ header .menu-bar-icon {
   font-weight: 500;
 }
 
-.guitar-section {
-  background-color: var(--white-main);
-}
-.guitar-section .guitar-text {
+.guitar-text {
   max-width: 21em;
   text-align: justify;
   border: 1px black solid;
   padding: 1em;
+}
+
+.line-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  background-color: var(--white-main);
+}
+
+svg {
+  display: inline-block;
+  height: 110%;
+  z-index: 80;
+  position: relative;
+  transform: rotate(-10deg);
 }
 
 .section {
@@ -164,7 +183,7 @@ header .menu-bar-icon {
 }
 
 :root {
-  --white-main: #f0f7e1;
+  --white-main: #f8eceb;
   --black-main: #1e1a1d;
   --third-color: rgb(213, 54, 80);
 }/*# sourceMappingURL=style.css.map */

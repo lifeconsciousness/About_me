@@ -4,6 +4,7 @@ header{
     background-color: var(--white-main);
     border-bottom: var(--black-main) 2px solid;
     position: fixed;
+    z-index: 100;
 
     display: flex;
     justify-content: space-between;
