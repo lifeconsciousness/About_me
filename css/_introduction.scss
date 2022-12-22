@@ -1,1 +1,27 @@
 //add dark background, maybe gradient
+
+.introduction-section{
+    background-color: var(--black-main);
+    color: var(--white-main);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    align-items: center;
+
+
+    h1{
+        font-size: 3em;
+        font-weight: 500;
+    }
+}
+
+// .introduction-section::after{
+//     content: '';
+//     width: 1px;
+//     height: 80vh;
+//     left: 30px;
+//     position: absolute;
+//     background-color: white;
+// }
+
