@@ -13,10 +13,19 @@ input, textarea, button, select{
     font: inherit;
 }
 
+h1,h2,h3,h4,h5,p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
 body{
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    font-family: 'Unbounded', cursive;
 }
 //////////////////////
 
@@ -27,6 +36,9 @@ body{
 @import "./songwriting";
 @import "./conclusion";
 
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+
+//reusable classes for sections
 .section{
     height: 100vh;
     padding: 2em;
@@ -43,4 +55,19 @@ body{
     display: grid;
     grid-template-rows: repeat(2, auto);
     grid-template-columns: 1fr;
+}
+
+.align-items-centered{
+    align-items: center;
+}
+.justify-content-centered{
+    justify-items: center;
+}
+
+///////////////////////////////
+
+//global variables
+:root{
+    --white-main: rgb(255, 255, 255);
+    --black-main: black;
 }

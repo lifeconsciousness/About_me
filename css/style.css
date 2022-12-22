@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -11,12 +12,79 @@ input, textarea, button, select {
   font: inherit;
 }
 
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  font-family: "Unbounded", cursive;
 }
 
+header {
+  height: 2.85em;
+  width: 100vw;
+  background-color: var(--white-main);
+  border-bottom: var(--black-main) 2px solid;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+header nav {
+  display: flex;
+  gap: 20px;
+}
+header nav a {
+  color: var(--black-main);
+  font-size: 1em;
+  font-stretch: ultra-condensed;
+}
+header .menu-bar-icon {
+  font-size: 3.5em;
+  z-index: 20;
+  opacity: 0;
+}
+
+.menu-bar-icon-size-smaller {
+  font-size: 3em !important;
+}
+
+@media (max-width: 920px) {
+  header {
+    padding: 0 1.4em;
+  }
+  header .nav-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: 0.7s ease-in-out;
+  }
+  header nav {
+    position: fixed;
+    flex-direction: column;
+    height: 100vh;
+    width: 60vw;
+    background-color: var(--white-main);
+    color: var(--black-main);
+    padding: 5em 2em;
+    border-left: var(--black-main) 2px solid;
+  }
+  header .menu-bar-icon {
+    opacity: 1;
+  }
+}
 .section {
   height: 100vh;
   padding: 2em;
@@ -32,4 +100,17 @@ body {
   display: grid;
   grid-template-rows: repeat(2, auto);
   grid-template-columns: 1fr;
+}
+
+.align-items-centered {
+  align-items: center;
+}
+
+.justify-content-centered {
+  justify-items: center;
+}
+
+:root {
+  --white-main: rgb(255, 255, 255);
+  --black-main: black;
 }/*# sourceMappingURL=style.css.map */
