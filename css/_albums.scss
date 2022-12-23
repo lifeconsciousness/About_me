@@ -1,0 +1,55 @@
+.albums-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+    align-items: center;
+    background-color: var(--black-main);
+    color: white;
+    
+    .favourite-music-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        //text-align: center;
+        overflow: hidden;
+
+        h2{
+            padding-top: 4em;
+        }
+        p{
+            padding-top: 1em;
+            width: 30vmax;
+            opacity: .8;
+        }
+    }
+
+    .slider-container{
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .albums-slider{
+        display: flex;
+        position: absolute;
+        
+        gap: 4vmin;
+
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li{
+            width: 40vmin;
+            height: 40vmin;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.026);
+            border-radius: 5px;
+        }
+    }
+
+
+}
+

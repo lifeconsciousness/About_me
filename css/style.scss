@@ -22,6 +22,7 @@ a{
 }
 html{
     scroll-behavior: smooth;
+    //scrollbar-width:thin;
 }
 
 body{
@@ -29,7 +30,11 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Unbounded', cursive;
+    overflow-x: hidden;
+
+
 }
+
 //////////////////////
 
 @import "./header";
@@ -73,12 +78,13 @@ body{
 :root{
     //--white-main: rgb(255, 255, 255);
     //--white-main: #f0f7e1;
-    --white-main: #f8eceb;
+    --white-main: #f7f4f4;
 
     //--black-main: rgb(44, 43, 49);
     //--black-main: #383f51;
     --black-main: #1e1a1d;
 
+    --third-color: rgb(99, 171, 35);
     //--third-color: rgb(127, 220, 45);
-    --third-color: rgb(213, 54, 80);
+    //--third-color: rgb(213, 54, 80);
 }
