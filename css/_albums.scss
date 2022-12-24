@@ -1,8 +1,8 @@
 .albums-section{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr;
+    display: flex;
     align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
     background-color: var(--black-main);
     color: white;
     
@@ -11,45 +11,49 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        //text-align: center;
         overflow: hidden;
 
         h2{
-            padding-top: 4em;
+            padding-top: 3vmin;
         }
+
         p{
-            padding-top: 1em;
+            padding-top: 2em;
             width: 30vmax;
             opacity: .8;
         }
     }
 
-    .slider-container{
-        position: relative;
-
+   .albums-container{
         display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .albums-slider{
-        display: flex;
-        position: absolute;
-        
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 4vmin;
-
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+        width: 100vw;
+        padding: 0 2em;
 
         li{
-            width: 40vmin;
-            height: 40vmin;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.026);
-            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 25vmin;
+                min-width: 110px;
+            }
         }
-    }
+   }
+   .albums-container>*{
+        flex: 1 0 25%;
+   }
 
+   @media (max-width: 500px){
+        .albums-container>*{
+            flex: 1 0 20%;
+        }
+   }
 
 }
+
+
+
 
