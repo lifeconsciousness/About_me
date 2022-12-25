@@ -20,7 +20,7 @@
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 2fr 0.5fr 0.5fr;
     align-items: center;
 
 
@@ -29,7 +29,7 @@
         overflow: hidden;
 
         h1{
-            //margin-top: .7em;
+            margin-top: 1em;
             font-size: 3em;
             font-weight: 500;
             width: 70vmin;
@@ -100,7 +100,50 @@
         }
 
     }
+    button{
+        width: 30vmin;
+        height: 7vmin;
+        min-width: 179px;
+        min-height: 50px;
+        border: 0;
+        outline: none;
+        border-radius: 0px;
 
+        transform-origin: center;
+        transition: .7s all;
+    }
+    button:hover{
+        cursor: pointer;
+        background-color: var(--third-color);
+    }
+
+    .buttonAnimation{
+        animation: buttonAnim 2s forwards;
+    }
+
+    @keyframes buttonAnim{
+        0%{
+            transform: scale(0,0.5);
+        }
+        70%{
+            transform: scale(0,1);
+        }
+        100%{
+            transform: scale(1,1);
+        }
+    }
+
+
+
+    .textFadeAnimation{
+        animation: fadeIn 2.5s forwards;
+    }
+
+    @keyframes fadeIn{
+        0%{opacity: 0;}
+        70%{opacity: 0;}
+        100%{opacity: 1;}
+    }
 }
 
 

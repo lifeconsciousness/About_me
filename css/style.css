@@ -118,13 +118,14 @@ header .menu-bar-icon {
   color: var(--white-main);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 2fr 0.5fr 0.5fr;
   align-items: center;
 }
 .introduction-section .greetingsText {
   overflow: hidden;
 }
 .introduction-section .greetingsText h1 {
+  margin-top: 1em;
   font-size: 3em;
   font-weight: 500;
   width: 70vmin;
@@ -190,6 +191,73 @@ header .menu-bar-icon {
   height: 7vmin;
   min-width: 179px;
   min-height: 50px;
+}
+.introduction-section button {
+  width: 30vmin;
+  height: 7vmin;
+  min-width: 179px;
+  min-height: 50px;
+  border: 0;
+  outline: none;
+  border-radius: 0px;
+  transform-origin: center;
+  transition: 0.7s all;
+}
+.introduction-section button:hover {
+  cursor: pointer;
+  background-color: var(--third-color);
+}
+.introduction-section .buttonAnimation {
+  -webkit-animation: buttonAnim 2s forwards;
+          animation: buttonAnim 2s forwards;
+}
+@-webkit-keyframes buttonAnim {
+  0% {
+    transform: scale(0, 0.5);
+  }
+  70% {
+    transform: scale(0, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes buttonAnim {
+  0% {
+    transform: scale(0, 0.5);
+  }
+  70% {
+    transform: scale(0, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.introduction-section .textFadeAnimation {
+  -webkit-animation: fadeIn 2.5s forwards;
+          animation: fadeIn 2.5s forwards;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .whiteStartAnimation {
