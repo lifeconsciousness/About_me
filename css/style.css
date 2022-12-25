@@ -124,8 +124,58 @@ header .menu-bar-icon {
 .introduction-section h1 {
   font-size: 3em;
   font-weight: 500;
+  max-width: 40vw;
+  text-align: center;
+}
+.introduction-section p {
+  opacity: 0.8;
+  max-width: 55vw;
+  text-align: center;
 }
 
+.whiteStartAnimation {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white-main);
+  display: block;
+  position: absolute;
+  z-index: 10000;
+}
+
+.animationItself {
+  -webkit-animation: startAnimation 1.2s ease-in-out forwards;
+          animation: startAnimation 1.2s ease-in-out forwards;
+}
+
+@-webkit-keyframes startAnimation {
+  0% {
+    transform: translateY(0);
+    transform: translateX(0);
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0%, 100%);
+    opacity: 0;
+    z-index: 4;
+  }
+}
+
+@keyframes startAnimation {
+  0% {
+    transform: translateY(0);
+    transform: translateX(0);
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0%, 100%);
+    opacity: 0;
+    z-index: 4;
+  }
+}
 .guitar-text {
   max-width: 21em;
   text-align: justify;
@@ -363,7 +413,7 @@ svg {
     margin-left: 0;
   }
   .image-selector p:active {
-    font-size: 1.08em;
+    transform: scale(1.03);
   }
   .songwriting-section .songwriting-text {
     font-size: 0.9em;

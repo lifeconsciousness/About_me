@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-img, picture, svg, video{
-    // display: block;
-    // max-width: 100%;
-}
-
 input, textarea, button, select{
     font: inherit;
 }
@@ -31,7 +26,7 @@ body{
     padding: 0;
     font-family: 'Unbounded', cursive;
     overflow-x: hidden;
-
+    // overflow-y: hidden;
 
 }
 

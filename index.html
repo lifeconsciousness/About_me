@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script defer src="./js/script.js"></script>
     <script defer src="./js/header.js"></script>
-    <script defer src="./js/typewriter.js"></script>
+    <script defer src="./js/introduction.js"></script>
     <script defer src="./js/guitar.js"></script>
     <script defer src="./js/songwriting.js"></script>
     <script defer src="./js/albums.js"></script>
@@ -32,11 +32,17 @@
         <p class="menu-bar-icon">=</p>
     </header>
 
+    <div class="whiteStartAnimation"></div>
+
     <section id="introduction" class="introduction-section section justify-content-centered">
-        <div class="typewriter">
-            <h1>I am</h1>
+        <div class="greetingsText">
+            <h1 id="greetings">Hi, my name is Maksym and I love music!</h1>
         </div>
-        <div class="introduction-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, nobis.</div>
+        <p class="introduction-text">
+            <button><a href="#guitar">explore</a></button>
+            On this website, you will see some information about my hobby, how I came to it and what I have achieved.
+        </p>
+        <!-- <button><a href="#guitar">Explore</a></button> -->
     </section>
 
     <section id="guitar" class="line-container">
@@ -55,9 +61,6 @@
             <p>Click on the image to make it larger, click again to close it</p>
         </div>
 
-        
-        <!-- Add larger album images to the container and display they onclick -->
-        <!-- Maybe just make it with active or hover -->
         <ul class="albums-container">
             <li>
                 <img class="albumImg selectAlbumCover" data-album src="https://f4.bcbits.com/img/a0370040256_10.jpg" alt="giles corey cover" draggable="false" unselectable="on">
@@ -123,6 +126,7 @@
     </section>
 
     <section id="mysong" class="mysong-section section grid-vertical">
+        <!-- Make table with song players, date when written etc -->
         <div class="note">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, amet.</div>
         <div class="conclusion">
             <div class="conclusion-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, amet.</div>
