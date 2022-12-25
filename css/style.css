@@ -45,7 +45,7 @@ header {
 }
 header .logo-text {
   font-size: 1.5em;
-  color: black;
+  color: #000;
 }
 header nav {
   display: flex;
@@ -263,6 +263,22 @@ svg {
 .albums-section .albums-container > * {
   flex: 1 0 25%;
 }
+.albums-section .biggerCover {
+  position: absolute;
+  width: 0.000001vmin;
+  opacity: 0;
+  transition: all 1s;
+}
+.albums-section .coverActive {
+  opacity: 1;
+  width: 45vw;
+  border: 1px solid white;
+}
+@media (max-width: 720px) {
+  .albums-section .coverActive {
+    width: 76vw;
+  }
+}
 
 @media (max-width: 500px) {
   .albums-container > * {
@@ -286,12 +302,14 @@ svg {
 .songwriting-section .photo-from-concert {
   width: 60vmin;
   border-radius: 2px;
+  aspect-ratio: 16/10.6;
 }
 .songwriting-section .songwriting-text {
   max-width: 21em;
   text-align: justify;
   border-right: 2px black solid;
   padding: 1em;
+  margin-left: 2em;
 }
 
 .img-container {
@@ -325,10 +343,11 @@ svg {
 }
 .image-selector p:hover {
   cursor: pointer;
-  border-bottom: 2px solid black;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 570px) {
   .containerForImage {
     flex-direction: column;
     align-items: center;

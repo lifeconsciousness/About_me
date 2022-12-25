@@ -5,6 +5,7 @@ let images = document.querySelectorAll(".imageThatCanBeLarger"),
     imageSelector = document.querySelector(".image-selector")
 
 let isEnabled = false;
+
 for(let i = 0; i < images.length; i++){
     images[i].addEventListener("click", e =>{
         e.target.classList.toggle("photo-from-concert")

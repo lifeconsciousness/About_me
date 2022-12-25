@@ -26,7 +26,7 @@
         }
     }
 
-   .albums-container{
+    .albums-container{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -49,18 +49,34 @@
             }
             
         }
-   }
-   .albums-container>*{
+    }
+    .albums-container>*{
         flex: 1 0 25%;
-   }
+    }
 
-   
+    .biggerCover{
+        position: absolute;
+        width: 0.000001vmin;
+
+        opacity: 0;
+        transition: all 1s;
+    }
+    .coverActive{
+        opacity: 1;
+        width: 45vw;
+        border: 1px solid white;
+    }
+    @media (max-width: 720px){
+        .coverActive{
+            width: 76vw;
+        }
+    }
 }
 
 @media (max-width: 500px){
     .albums-container>*{
         flex: 1 0 20%;
-     }
+    }
     .albums-container{
         li{
             p{
@@ -81,6 +97,9 @@
         }
     }
 }
+
+
+
 
 
 
