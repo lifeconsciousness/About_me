@@ -231,7 +231,7 @@ svg {
   text-align: center;
 }
 .albums-section .favourite-music-text h2 {
-  padding-top: 3vmin;
+  padding-top: 5vmin;
 }
 .albums-section .favourite-music-text p {
   padding-top: 0.5em;
@@ -267,12 +267,12 @@ svg {
   position: absolute;
   width: 0.000001vmin;
   opacity: 0;
-  transition: all 1s;
 }
 .albums-section .coverActive {
   opacity: 1;
   width: 45vw;
   border: 1px solid white;
+  transition: all 1s;
 }
 @media (max-width: 720px) {
   .albums-section .coverActive {
@@ -310,6 +310,7 @@ svg {
   border-right: 2px black solid;
   padding: 1em;
   margin-left: 2em;
+  margin-right: 2em;
 }
 
 .img-container {
@@ -351,9 +352,11 @@ svg {
   .containerForImage {
     flex-direction: column;
     align-items: center;
+    margin-top: 2em;
   }
   .image-selector h3 {
     text-align: center;
+    font-size: 1em;
   }
   .image-selector p {
     text-align: center;
@@ -361,6 +364,9 @@ svg {
   }
   .image-selector p:active {
     font-size: 1.08em;
+  }
+  .songwriting-section .songwriting-text {
+    font-size: 0.9em;
   }
 }
 .not-visible {

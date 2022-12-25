@@ -15,7 +15,7 @@
         text-align: center;
 
         h2{
-            padding-top: 3vmin;
+            padding-top: 5vmin;
         }
 
         p{
@@ -59,12 +59,12 @@
         width: 0.000001vmin;
 
         opacity: 0;
-        transition: all 1s;
     }
     .coverActive{
         opacity: 1;
         width: 45vw;
         border: 1px solid white;
+        transition: all 1s;
     }
     @media (max-width: 720px){
         .coverActive{
