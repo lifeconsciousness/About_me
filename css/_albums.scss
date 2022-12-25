@@ -22,6 +22,7 @@
             padding-top: .5em;
             width: 30vmax;
             opacity: .6;
+            width: 60%;
         }
     }
 
@@ -42,6 +43,9 @@
                 width: 25vmin;
                 min-width: 110px;
             }
+            p{
+                margin-top: .1em;
+            }
             
         }
    }
@@ -49,14 +53,33 @@
         flex: 1 0 25%;
    }
 
-   @media (max-width: 500px){
-        .albums-container>*{
-            flex: 1 0 20%;
-        }
-   }
-
+   
 }
 
+@media (max-width: 500px){
+    .albums-container>*{
+        flex: 1 0 20%;
+     }
+    .albums-container{
+        li{
+            p{
+                font-size: .8em;
+            }
+        }
+    }
+    .albums-section{
+        .favourite-music-text{
+            h2{
+                padding-top: 1em;
+                font-size: 1em;
+            }
+            p{
+                width: 90%;
+                font-size: .75em;
+            }
+        }
+    }
+}
 
 
 

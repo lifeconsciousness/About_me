@@ -6,6 +6,9 @@
     border-right: 2px black solid;
     //border-left: 2px black solid;
     padding: 1em;
+    z-index: 1000;
+    //background-color: rgba(255, 255, 255, 0.26);
+    backdrop-filter: blur(3px);
 }
 
 
@@ -27,15 +30,6 @@
     background-color: var(--white-main);
 }
 
-//fiest version of guitar
-// svg{
-    //     display: inline-block;
-    //     height: 110%;
-    //     z-index: 80;
-    //     position: relative;
-    //     transform: rotate(-10deg);
-    // }
-
 .svg-container{
     width: 100%;
     height: 100vh;
@@ -49,11 +43,12 @@
 svg{
     display: inline-block;
     position: relative;
-    right: 40%;
-    top: 27%;
+    right: 70%;
+    top: 50%;
     height: 100%;
     z-index: 80;
     transform: rotate(-10deg);
+    transform: scale(2);
 }
 
 @media (max-width: 500px){
@@ -62,20 +57,46 @@ svg{
         font-size: .9em;
     }
 }
-@media (max-width: 900px){
+@media (min-width: 970px) and (max-width: 1120px){
+    svg{
+        transform: translateX(50px);
+        transform: scale(2);
+    }
+}
+
+@media (max-width: 970px){
     .line-container{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
     .svg-container{
-        display: none;
+        transform: scale(1.3);
+        top: 20%;
+        position: absolute;
     }
 }
-@media (min-width: 900px) and (max-width: 1120px){
-    svg{
-        top: 24%;
-        transform: translateX(50px);
+@media (max-width: 600px){
+    .svg-container{
+        top: -20%;
+        transform: scale(1.8);
     }
 }
+@media (max-width: 510px){
+    .svg-container{
+        top: -80%;
+        transform: scale(2);
+    }
+}
+@media (max-width: 390px){
+    .svg-container{
+        top: -110%;
+    }
+}
+@media (max-width: 340px){
+    .svg-container{
+        top: -160%;
+    }
+}
+
 
     
