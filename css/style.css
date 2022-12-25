@@ -50,7 +50,7 @@ header .logo-text {
 header nav {
   display: flex;
   gap: 20px;
-  margin-right: 27px;
+  margin-right: 34px;
 }
 header nav a {
   color: var(--black-main);
@@ -121,16 +121,75 @@ header .menu-bar-icon {
   grid-template-rows: 2fr 1fr;
   align-items: center;
 }
-.introduction-section h1 {
+.introduction-section .greetingsText {
+  overflow: hidden;
+}
+.introduction-section .greetingsText h1 {
   font-size: 3em;
   font-weight: 500;
-  max-width: 40vw;
+  width: 70vmin;
   text-align: center;
+  transform: translateY(100%);
 }
-.introduction-section p {
+.introduction-section .greetingsText .greetingsAnimated {
+  -webkit-animation: greetingsAnimation 1.6s ease-in-out forwards;
+          animation: greetingsAnimation 1.6s ease-in-out forwards;
+}
+@-webkit-keyframes greetingsAnimation {
+  0% {
+    transform: translateY(100%);
+  }
+  60% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes greetingsAnimation {
+  0% {
+    transform: translateY(100%);
+  }
+  60% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@media (max-width: 600px) {
+  .introduction-section .greetingsText h1 {
+    font-size: 2.2em;
+    width: 80vmin;
+  }
+}
+@media (max-width: 400px) {
+  .introduction-section .greetingsText h1 {
+    font-size: 1.8em;
+    width: 80vmin;
+  }
+  .introduction-section .introduction-text p {
+    max-width: 90vw !important;
+    text-align: center;
+  }
+}
+.introduction-section .introduction-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+.introduction-section .introduction-text p {
   opacity: 0.8;
   max-width: 55vw;
   text-align: center;
+}
+.introduction-section .introduction-text button {
+  width: 30vmin;
+  height: 7vmin;
+  min-width: 179px;
+  min-height: 50px;
 }
 
 .whiteStartAnimation {
@@ -143,8 +202,8 @@ header .menu-bar-icon {
 }
 
 .animationItself {
-  -webkit-animation: startAnimation 1.2s ease-in-out forwards;
-          animation: startAnimation 1.2s ease-in-out forwards;
+  -webkit-animation: startAnimation 1.3s ease-in-out forwards;
+          animation: startAnimation 1.3s ease-in-out forwards;
 }
 
 @-webkit-keyframes startAnimation {
