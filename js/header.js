@@ -3,7 +3,8 @@ const menuBarIcon = document.querySelector(".menu-bar-icon"),
 
 let navbarIsOpen = false
 
-menuBarIcon.addEventListener("click", ()=>{
+menuBarIcon.addEventListener("click", (e)=>{
+    e.preventDefault()
     if(!navbarIsOpen){
         menuBarIcon.innerHTML = "x"
 
