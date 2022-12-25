@@ -15,7 +15,7 @@
     overflow: hidden;
     width: 100vw;
     height: 100vh;
-    padding: 0 2em;
+    padding: 2em;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -71,18 +71,11 @@ svg{
         display: none;
     }
 }
-@media (min-width: 1000px) and (max-width: 1120px){
+@media (min-width: 900px) and (max-width: 1120px){
     svg{
-        top: 14%;
-        transform: scale(1.4);
-    }
-}
-@media (min-width: 900px) and (max-width: 1000px){
-    svg{
-        top: 10%;
-        transform: scale(1.4);
+        top: 24%;
+        transform: translateX(50px);
     }
 }
 
-    
     

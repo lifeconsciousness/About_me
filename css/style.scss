@@ -5,8 +5,8 @@
 }
 
 img, picture, svg, video{
-    display: block;
-    max-width: 100%;
+    // display: block;
+    // max-width: 100%;
 }
 
 input, textarea, button, select{
@@ -72,6 +72,12 @@ body{
     justify-items: center;
 }
 
+@media (max-width: 920px){
+    .grid-horizontal{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+}
 ///////////////////////////////
 
 //global variables

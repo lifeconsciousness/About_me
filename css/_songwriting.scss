@@ -1,0 +1,32 @@
+.songwriting-section{
+    background-color: var(--white-main);
+
+    .photo-from-concert{
+        width: 60vmin;
+        border-radius: 2px;
+    }
+
+    .songwriting-text{
+        max-width: 21em;
+        text-align: justify;
+
+        border-right: 2px black solid;
+        padding: 1em;
+    }
+
+}
+
+.img-container{
+    // padding: 5em 3em;
+    // width: 100%;
+    // position: absolute;
+    // height: 100vh;
+}
+
+.largerImg{
+    //display: none;
+    // width: 92.5vw;
+    // height: 83vh;
+    // object-fit: cover;
+}
+

@@ -3,11 +3,6 @@
   box-sizing: border-box;
 }
 
-img, picture, svg, video {
-  display: block;
-  max-width: 100%;
-}
-
 input, textarea, button, select {
   font: inherit;
 }
@@ -139,7 +134,7 @@ header .menu-bar-icon {
   overflow: hidden;
   width: 100vw;
   height: 100vh;
-  padding: 0 2em;
+  padding: 2em;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -181,16 +176,10 @@ svg {
     display: none;
   }
 }
-@media (min-width: 1000px) and (max-width: 1120px) {
+@media (min-width: 900px) and (max-width: 1120px) {
   svg {
-    top: 14%;
-    transform: scale(1.4);
-  }
-}
-@media (min-width: 900px) and (max-width: 1000px) {
-  svg {
-    top: 10%;
-    transform: scale(1.4);
+    top: 24%;
+    transform: translateX(50px);
   }
 }
 .albums-section {
@@ -207,14 +196,15 @@ svg {
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
+  text-align: center;
 }
 .albums-section .favourite-music-text h2 {
   padding-top: 3vmin;
 }
 .albums-section .favourite-music-text p {
-  padding-top: 2em;
+  padding-top: 0.5em;
   width: 30vmax;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 .albums-section .albums-container {
   display: flex;
@@ -242,6 +232,24 @@ svg {
   }
 }
 
+.songwriting-section {
+  background-color: var(--white-main);
+}
+.songwriting-section .photo-from-concert {
+  width: 60vmin;
+  border-radius: 2px;
+}
+.songwriting-section .songwriting-text {
+  max-width: 21em;
+  text-align: justify;
+  border-right: 2px black solid;
+  padding: 1em;
+}
+
+.mysong-section {
+  background-color: var(--third-color);
+}
+
 .section {
   min-height: 100vh;
   padding: 2em;
@@ -267,6 +275,12 @@ svg {
   justify-items: center;
 }
 
+@media (max-width: 920px) {
+  .grid-horizontal {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
+}
 :root {
   --white-main: #f7f4f4;
   --black-main: #1e1a1d;
