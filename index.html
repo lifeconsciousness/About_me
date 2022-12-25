@@ -51,10 +51,10 @@
     <section id="favouriteMusic" class="albums-section section justify-content-centered">
         <div class="favourite-music-text">
             <h2>I like listening to music a lot. Here is some my favourite albums of all time</h2>
-            <p>Click on the image to make it larger</p>
+            <p>Click on the image to make it larger, click again to close it</p>
         </div>
 
-
+        <!-- Add larger album images to the container and display they onclick -->
         <ul class="albums-container" data-mouse-down-at="0" data-prev-percentage="0">
             <li>
                 <img src="https://f4.bcbits.com/img/a0370040256_10.jpg" alt="" draggable="false" unselectable="on">
@@ -84,9 +84,12 @@
     </section>
 
     <section id="songwriting" class="songwriting-section section grid-horizontal  justify-content-centered align-items-centered">
-        <div class="small-photo-container img-container">
-            <img class="largerImg photo-from-concert" src="./img/DSC03973.JPG" alt="photo from concert">
+       
+
+        <div class="containerForImage">
+            <img class="photo-from-concert imageThatCanBeLarger" src="./img/DSC03973.JPG" alt="photo from concert">
         </div>
+
         <div class="songwriting-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam voluptates similique consequatur illum. Nisi iure deleniti perferendis officiis commodi odit natus quisquam repellendus soluta eveniet suscipit amet, vero iste voluptatem!</div>
     </section>
 

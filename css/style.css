@@ -246,6 +246,22 @@ svg {
   padding: 1em;
 }
 
+.img-container {
+  padding: 5em 3em;
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+  transition: all 1s;
+}
+
+.larger-img {
+  width: 100%;
+  height: 82vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 1s;
+}
+
 .mysong-section {
   background-color: var(--third-color);
 }

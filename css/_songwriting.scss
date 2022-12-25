@@ -13,20 +13,20 @@
         border-right: 2px black solid;
         padding: 1em;
     }
-
 }
 
 .img-container{
-    // padding: 5em 3em;
-    // width: 100%;
-    // position: absolute;
-    // height: 100vh;
+    padding: 5em 3em;
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    transition: all 1s;
 }
 
-.largerImg{
-    //display: none;
-    // width: 92.5vw;
-    // height: 83vh;
-    // object-fit: cover;
+.larger-img{
+    width: 100%;
+    height: 82vh;
+    object-fit: cover;
+    transition: all 1s;
 }
 
