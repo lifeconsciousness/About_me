@@ -504,6 +504,7 @@ svg {
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 1s;
+  z-index: 300;
 }
 
 .containerForImage {

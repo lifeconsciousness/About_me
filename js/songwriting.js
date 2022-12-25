@@ -15,12 +15,16 @@ for(let i = 0; i < images.length; i++){
         parent.classList.toggle("img-container")
 
         if(isEnabled){
-            songwritingText.style.display = "block"
+            //songwritingText.style.display = "block"
+            songwritingText.style.opacity = "1"
             imageSelector.style.display = "block"
+            imageSelector.style.opacity = "1"
             isEnabled = false
         } else{
-            songwritingText.style.display = "none"
+            songwritingText.style.opacity = "0"
+            // songwritingText.style.display = "none"
             imageSelector.style.display = "none"
+            imageSelector.style.opacity = "0"
             isEnabled = true
         }
 
