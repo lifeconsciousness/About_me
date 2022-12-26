@@ -602,7 +602,6 @@ svg {
   height: 100vh;
 }
 .mysong-section h2 {
-  padding-top: 2.4em;
   text-align: center;
   color: var(--white-main);
   color: black !important;
@@ -611,7 +610,25 @@ svg {
   max-width: 100%;
   display: flex;
   flex-direction: column;
+  padding-top: 9em;
+  z-index: 950;
 }
+.mysong-section .song-selector .song {
+  font-size: 1.1em;
+  font-weight: 100;
+}
+.mysong-section .song-selector th {
+  font-size: 1.3em;
+}
+.mysong-section .song-selector .song:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+.mysong-section .song-selector .currentSong {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
 .music-waves {
   position: absolute;
   left: 0;
