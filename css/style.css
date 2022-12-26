@@ -367,7 +367,7 @@ svg {
     transform: scale(2);
   }
 }
-@media (max-width: 970px) {
+@media (max-width: 1050px) {
   .line-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -378,7 +378,7 @@ svg {
     position: absolute;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .svg-container {
     top: -20%;
     transform: scale(1.8);
@@ -390,7 +390,7 @@ svg {
     transform: scale(2);
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 430px) {
   .svg-container {
     top: -110%;
   }
@@ -598,7 +598,7 @@ svg {
   }
 }
 .mysong-section {
-  background-color: var(--third-color);
+  background-color: var(--green-third);
 }
 
 .music-waves {
@@ -611,17 +611,21 @@ svg {
   justify-content: center;
 }
 .music-waves .waves-container {
-  height: 150px;
+  height: 200px;
   display: flex;
   align-items: center;
   gap: 0.5em;
 }
 .music-waves .waves-container .wave {
   display: block;
-  width: 1em;
+  width: 1.2em;
   background-color: var(--white-main);
   border-radius: 10px;
-  opacity: 0.5;
+  opacity: 0.3;
+}
+.music-waves .waves-container .wave:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 .music-waves .waves-container .middle {
   height: 100%;
@@ -678,12 +682,12 @@ svg {
           animation-delay: 0.9s;
 }
 .music-waves .wave:nth-child(4) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 .music-waves .wave:nth-child(5) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 .music-waves .wave:nth-child(6) {
   -webkit-animation-delay: 1.2s;
@@ -702,8 +706,8 @@ svg {
           animation-delay: 0.3s;
 }
 .music-waves .wave:nth-child(10) {
-  -webkit-animation-delay: 1.3s;
-          animation-delay: 1.3s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 .music-waves .wave:nth-child(11) {
   -webkit-animation-delay: 0.5s;
@@ -717,6 +721,24 @@ svg {
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
 }
+.music-waves .song-player {
+  width: 100vmin;
+  height: 6vmin;
+  position: absolute;
+  justify-content: center;
+  z-index: 200;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+}
+.music-waves .play-pause-btn {
+  position: relative;
+  transform: scale(2);
+  width: 20px;
+  height: 20px;
+  margin-bottom: 6px;
+}
+
 .section {
   min-height: 100vh;
   padding: 2em;
@@ -753,4 +775,5 @@ svg {
   --black-main: #1e1a1d;
   --third-color: rgb(99, 171, 35);
   --green-new: #4dbd53;
+  --green-third: rgb(92, 164, 30);
 }/*# sourceMappingURL=style.css.map */

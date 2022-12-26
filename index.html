@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="./css/style.css">
     <script defer src="./js/script.js"></script>
     <script defer src="./js/header.js"></script>
-    <script defer src="./js/introduction.js"></script>
+    <!-- <script defer src="./js/introduction.js"></script> -->
     <script defer src="./js/guitar.js"></script>
     <script defer src="./js/songwriting.js"></script>
     <script defer src="./js/albums.js"></script>
     <script defer src="./js/conclusion.js"></script>
+
+    <!-- introduction and white animation turned off -->
 </head>
 <body>
     <header>
@@ -33,7 +35,7 @@
         <p class="menu-bar-icon">=</p>
     </header>
 
-    <div class="whiteStartAnimation"></div>
+    <!-- <div class="whiteStartAnimation"></div> -->
 
     <section id="introduction" class="introduction-section section justify-content-centered">
         <div class="greetingsText">
@@ -133,7 +135,22 @@
     <section id="mysong" class="mysong-section section">
         <!-- Make table with song players, date when written etc -->
         <div class="music-waves">
+            <div class="song-player">
+
+                <!-- <p class="play-pause-btn">▶</p>
+                <input type="range" name="song-slider-name" id="song-slider">
+                <input type="range" name="volume-slider-name" id="volume-slider"> -->
+
+
+                <audio controls>
+                    <source src="./audio/The_Regular_Person-song_about_nothing.mp3">
+                </audio>
+            </div>
+
+
+
             <div class="waves-container">
+
                 <div class="wave leftRight"></div>
                 <!--  -->
                 <div class="wave middle"></div>
@@ -150,13 +167,10 @@
                 <!-- 11 -->
                 <div class="wave leftRight"></div>
 
-
-
-                <div class="song-player"></div>
             </div>
         </div>
 
-        
+        <!-- Song name, date, active song -->
         <table class="song-selector">
 
         </table>

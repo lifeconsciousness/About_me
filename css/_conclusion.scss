@@ -1,6 +1,8 @@
 .mysong-section{
-    background-color: var(--third-color);
-    //add animated gradient
+    background-color: var(--green-third);
+    //background-color: var(--third-color);
+    //background-color: var(--green-new);
+
 }
 
 
@@ -19,18 +21,21 @@
 
     //audio waves animation
     .waves-container{
-        height: 150px;
+        height: 200px;
         display: flex;
         align-items: center;
         gap: .5em;
 
         .wave{
             display: block;
-            width: 1em;
+            width: 1.2em;
             background-color: var(--white-main);
             border-radius: 10px;
-            opacity: .5;
+            opacity: .3;
     
+        }
+        .wave:hover{
+            animation-play-state: paused;  //make pausing via js
         }
         .middle{
             height: 100%;
@@ -70,10 +75,10 @@
         animation-delay: 0.9s;
     }
     .wave:nth-child(4){
-        animation-delay: 0.4s;
+        animation-delay: 0.5s;
     }
     .wave:nth-child(5){
-        animation-delay: 1s;
+        animation-delay: .9s;
     }
     .wave:nth-child(6){
         animation-delay: 1.2s;
@@ -88,7 +93,7 @@
         animation-delay: 0.3s;
     }
     .wave:nth-child(10){
-        animation-delay: 1.3s;
+        animation-delay: .4s;
     }
     .wave:nth-child(11){
         animation-delay: .5s;
@@ -105,9 +110,26 @@
 
 
     .song-player{
+        width: 100vmin;
+        height: 6vmin;
+        position: absolute;
+        justify-content: center;
+        // background-color: white;
+        z-index: 200;
+        
+        padding: 1em;
+        display: flex;
+        align-items: center;
         
     }
-
+    
+    .play-pause-btn{
+        position: relative;
+        transform: scale(2);
+        width: 20px;
+        height: 20px;
+        margin-bottom: 6px;
+    }
 
 
 

@@ -7,16 +7,35 @@ let isOpen = false
 albumCovers.forEach(function(album,index){
     album.addEventListener("click", (e)=>{
         if(!isOpen){
-            biggerCovers[index].classList.toggle("coverActive")
+            biggerCovers[index].classList.add("coverActive")
         }
         isOpen = true        
     })
 })
 
+let clickCount = 0
 
-biggerCovers.forEach((cover,index) =>{
-    cover.addEventListener("click", e=>{
-        biggerCovers[index].classList.toggle("coverActive")
-        isOpen = false
-    })
+window.addEventListener("click", ()=>{
+    closeBigAlbums()
+
 })
+
+function closeBigAlbums(){
+    if(isOpen){
+        clickCount++
+    }
+    else if(clickCount == 1){
+        clickCount++
+    }
+    if(clickCount == 2){
+        console.log('close')
+        biggerCovers.forEach((cover,index) =>{
+            biggerCovers[index].classList.remove("coverActive")
+            isOpen = false
+        })
+        clickCount = 0
+    }
+
+}
+
+
