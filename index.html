@@ -67,27 +67,27 @@
 
         <ul class="albums-container">
             <li>
-                <img class="albumImg selectAlbumCover" data-album src="https://f4.bcbits.com/img/a0370040256_10.jpg" alt="giles corey cover" draggable="false" unselectable="on">
+                <img class="albumImg selectAlbumCover" src="https://f4.bcbits.com/img/a0370040256_10.jpg" alt="giles corey cover" loading="lazy" draggable="false" unselectable="on">
                 <p>Giles corey - Self titled</p>
             </li>
             <li>
-                <img class="albumImg selectAlbumCover" data-album  src="https://m.media-amazon.com/images/I/81rYMAvDDoL._AC_SL1500_.jpg" alt="unnatural world cover" draggable="false" unselectable="on">
+                <img class="albumImg selectAlbumCover" src="https://m.media-amazon.com/images/I/81rYMAvDDoL._AC_SL1500_.jpg" alt="unnatural world cover" loading="lazy" draggable="false" unselectable="on">
                 <p>Have a Nice Life - The Unnatural World</p>
             </li>
             <li>
-                <img class="albumImg selectAlbumCover" src="https://i0.wp.com/yourlastrites.com/wp-content/uploads/2017/07/tool10000days.jpg?fit=1000%2C1000&ssl=1" alt="10000 days cover" draggable="false" unselectable="on">
+                <img class="albumImg selectAlbumCover" src="https://i0.wp.com/yourlastrites.com/wp-content/uploads/2017/07/tool10000days.jpg?fit=1000%2C1000&ssl=1" loading="lazy" alt="10000 days cover" draggable="false" unselectable="on">
                 <p>Tool - 10000 days</p>
             </li>
             <li>
-                <img class="albumImg selectAlbumCover" src="https://images.genius.com/b498032667556bf162a434519a1c6e28.1000x1000x1.png" alt="the downward spiral cover" draggable="false" unselectable="on">
+                <img class="albumImg selectAlbumCover" src="https://images.genius.com/b498032667556bf162a434519a1c6e28.1000x1000x1.png" alt="the downward spiral cover" loading="lazy" draggable="false" unselectable="on">
                 <p>Nine Inch Nails - The Downward Spiral</p>
             </li>
             <li>
-                <img class="albumImg selectAlbumCover" src="https://cdn.albumoftheyear.org/album/168673-age-of-excuse.jpg" alt="age of excuse cover" draggable="false" unselectable="on">
+                <img class="albumImg selectAlbumCover" src="https://cdn.albumoftheyear.org/album/168673-age-of-excuse.jpg" alt="age of excuse cover" loading="lazy" draggable="false" unselectable="on">
                 <p>Mgla - Age of Excuse</p>
             </li>
             <li>
-                <img class="albumImg selectAlbumCover" src="https://i1.sndcdn.com/artworks-000583772981-s7bzsa-t500x500.jpg" alt="mistmorn cover" draggable="false" unselectable="on">
+                <img class="albumImg selectAlbumCover" src="https://i1.sndcdn.com/artworks-000583772981-s7bzsa-t500x500.jpg" alt="mistmorn cover" loading="lazy" draggable="false" unselectable="on">
                 <p>Mistmo<span style="letter-spacing: 1px;">rn</span> - Дідько, я у розпачі... </p>
             </li>
         </ul>
@@ -109,13 +109,13 @@
     <section id="songwriting" class="songwriting-section section grid-horizontal  justify-content-centered align-items-centered">
 
         <div class="containerForImage">
-            <img class="photo-from-concert imageThatCanBeLarger animation-left" src="./img/concert.JPG" alt="photo from concert" draggable="false">
+            <img class="photo-from-concert imageThatCanBeLarger animation-left" src="./img/concert.JPG" alt="photo from concert" loading="lazy" draggable="false">
             
-            <img class="photo-from-concert imageThatCanBeLarger not-visible" src="./img/guitar.jpg" alt="" draggable="false">
+            <img class="photo-from-concert imageThatCanBeLarger not-visible" src="./img/guitar.jpg" alt="" loading="lazy" draggable="false">
             
-            <img class="photo-from-concert imageThatCanBeLarger not-visible" src="./img/midi-keys.jpg" alt="" draggable="false">
+            <img class="photo-from-concert imageThatCanBeLarger not-visible" src="./img/midi-keys.jpg" alt="" loading="lazy" draggable="false">
             
-            <img class="photo-from-concert imageThatCanBeLarger not-visible" src="./img/fl-project.jpg" alt="" draggable="false">
+            <img class="photo-from-concert imageThatCanBeLarger not-visible" src="./img/fl-project.jpg" alt="" loading="lazy" draggable="false">
 
             <div class="image-selector">
                 <h3>Choose image or click on it:</h3>
@@ -132,19 +132,31 @@
 
 
 
-    <section id="mysong" class="mysong-section section">
+    <section id="mysong" class="mysong-section section grid-vertical align-items-centered justify-content-centered">
+        <h2>Examples of songs I wrote in 2021</h2>
+
+        <!-- Song name, date, active song -->
+        <table class="song-selector">
+            <th>Song</th>
+            <th>Created</th>
+            <tr>
+                <th class="song">insomnia</th>
+                <th>10.05.2021</th>
+            </tr>
+            <tr>
+                <th class="song">song about nothing</th>
+                <th>25.11.2021</th>
+            </tr>
+        </table>
+
         <!-- Make table with song players, date when written etc -->
         <div class="music-waves">
             <div class="song-player">
 
-                <!-- <p class="play-pause-btn">▶</p>
-                <input type="range" name="song-slider-name" id="song-slider">
-                <input type="range" name="volume-slider-name" id="volume-slider"> -->
-
-
-                <audio controls>
-                    <source src="./audio/The_Regular_Person-song_about_nothing.mp3">
+                <audio controls class="audio-player">
+                    <source class="song-source" src="./audio/The_Regular_Person-song_about_nothing.mp3">
                 </audio>
+
             </div>
 
 
@@ -170,10 +182,7 @@
             </div>
         </div>
 
-        <!-- Song name, date, active song -->
-        <table class="song-selector">
-
-        </table>
+        
     </section>
 
 

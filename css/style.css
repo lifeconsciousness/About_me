@@ -599,13 +599,24 @@ svg {
 }
 .mysong-section {
   background-color: var(--green-third);
+  height: 100vh;
 }
-
+.mysong-section h2 {
+  padding-top: 2.4em;
+  text-align: center;
+  color: var(--white-main);
+  color: black !important;
+}
+.mysong-section .song-selector {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 .music-waves {
   position: absolute;
   left: 0;
   width: 100vw;
-  height: 80vh;
+  height: 55vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -623,7 +634,7 @@ svg {
   border-radius: 10px;
   opacity: 0.3;
 }
-.music-waves .waves-container .wave:hover {
+.music-waves .waves-container .pause-animation {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
 }
@@ -731,12 +742,11 @@ svg {
   display: flex;
   align-items: center;
 }
-.music-waves .play-pause-btn {
-  position: relative;
-  transform: scale(2);
-  width: 20px;
-  height: 20px;
-  margin-bottom: 6px;
+.music-waves .audio-player {
+  width: 100%;
+  max-width: 40em;
+  padding: 0 1em;
+  opacity: 0.8;
 }
 
 .section {
@@ -775,5 +785,5 @@ svg {
   --black-main: #1e1a1d;
   --third-color: rgb(99, 171, 35);
   --green-new: #4dbd53;
-  --green-third: rgb(92, 164, 30);
+  --green-third: rgb(48, 146, 23);
 }/*# sourceMappingURL=style.css.map */

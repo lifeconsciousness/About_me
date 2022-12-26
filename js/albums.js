@@ -28,7 +28,6 @@ function closeBigAlbums(){
         clickCount++
     }
     if(clickCount == 2){
-        console.log('close')
         biggerCovers.forEach((cover,index) =>{
             biggerCovers[index].classList.remove("coverActive")
             isOpen = false
