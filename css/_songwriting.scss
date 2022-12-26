@@ -46,6 +46,10 @@
 .containerForImage{
     display: flex;
     gap: 1em;
+
+    img:hover{
+        cursor: pointer;
+    }
 }
 
 .image-selector{
@@ -55,7 +59,7 @@
     p{
         margin-left: .8em;
         margin-bottom: .3em;
-        font-size: 1.1em;
+        font-size: 1.04em;
     }
     p:hover{
         cursor: pointer;
@@ -99,4 +103,17 @@
 
 .visible{
     display: block;
+}
+
+.animation-left{
+    animation: appearFromLeft .3s ease-in-out forwards;
+}
+
+@keyframes appearFromLeft{
+    from{
+        transform: translateX(-4%);
+    }
+    to{
+        transform: translateX(0%);
+    }
 }

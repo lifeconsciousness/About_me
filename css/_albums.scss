@@ -5,6 +5,7 @@
     flex-direction: column;
     background-color: var(--black-main);
     color: white;
+    //min-height: 106vh !important;
     
     .favourite-music-text{
         display: flex;
@@ -62,7 +63,7 @@
     }
     .coverActive{
         opacity: 1;
-        width: 45vw;
+        width: 41vw;
         border: 1px solid white;
         transition: all 1s;
     }

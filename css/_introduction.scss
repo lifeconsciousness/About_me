@@ -161,16 +161,20 @@
     height: 100vh;
     background-color: var(--white-main);
     display: block;
-    position: absolute;
+    position: fixed;
     z-index: 10000;
 }
 
 .animationItself{
-    animation: startAnimation 1.3s ease-in-out forwards;
+    animation: startAnimation 1.1s ease-in-out forwards;
 }
 
 @keyframes startAnimation{
     0%{
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+    30%{
         transform: translateY(0);
         transform: translateX(0);
     }
