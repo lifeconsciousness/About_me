@@ -96,6 +96,13 @@
         }
     }
 }
+@media (max-width: 310px){
+    .songwriting-section{
+        .songwriting-text{
+            margin: 0;
+        }
+    }
+}
 
 .not-visible{
     display: none;
