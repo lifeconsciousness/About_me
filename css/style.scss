@@ -17,7 +17,6 @@ a{
 }
 html{
     scroll-behavior: smooth;
-    //scrollbar-width:thin;
 }
 
 body{
@@ -26,7 +25,6 @@ body{
     padding: 0;
     font-family: 'Unbounded', cursive;
     overflow-x: hidden;
-    // overflow-y: hidden;
 
 }
 
@@ -45,8 +43,6 @@ body{
 .section{
     min-height: 100vh;
     padding: 2em;
-
-    //width: 100%;
 }
 
 .grid-horizontal{

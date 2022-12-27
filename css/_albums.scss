@@ -5,8 +5,8 @@
     flex-direction: column;
     background-color: var(--black-main);
     color: white;
-    //min-height: 106vh !important;
-    
+
+    //text in the albums section
     .favourite-music-text{
         display: flex;
         align-items: center;
@@ -59,15 +59,15 @@
         flex: 1 0 25%;
     }
 
+    //default class of bigger covers 
     .biggerCover{
         position: absolute;
         width: 0.000001vmin;
 
-        // display: none; ////////////////
         opacity: 0;
     }
+    //visible state of bigger covers
     .coverActive{
-        // display: block;
         opacity: 1;
         width: 41vw;
         border: 1px solid white;

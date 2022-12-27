@@ -1,3 +1,4 @@
+//all navbar styling
 header{
     height: 2.85em;
     width: 100vw;
@@ -17,6 +18,7 @@ header{
         color: #000;
     }
 
+    //navigational elements stying
     nav{
         display: flex;
         gap: 20px;
@@ -47,13 +49,7 @@ header{
           
         a:hover::after{
             transform: scale(1);
-        }
-
-        a:last-child::after {
-            //background-color: rgb(35, 168, 208) !important;
-            //background-color: rgb(49, 43, 234) !important;
-        }
-          
+        } 
     }
 
     .menu-bar-icon{
@@ -62,6 +58,8 @@ header{
         opacity: 0;
     }
 }
+
+//version of navbar responsive on mobile and tablet devices
 
 .menu-bar-icon-size-smaller{
     font-size: 3em !important;

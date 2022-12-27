@@ -15,6 +15,7 @@
         opacity: .5;
     }
 
+    //songs table stying
     .song-selector{
         max-width: 100%;
         display: flex;
@@ -41,20 +42,19 @@
 
 
 
-
+//waves animation styling and keyframe animations
 .music-waves{
     position: absolute;
     left: 0;
     width: 100vw;
     height: 55vh;
-    // padding-bottom: 10em;
 
     display: flex;
     align-items: center;
     justify-content: center;
     
 
-    //audio waves animation
+
     .waves-container{
         height: 200px;
         display: flex;
@@ -76,6 +76,7 @@
             height: 100%;
             animation: waveAnimation .5s linear infinite;
         }
+        //lower height for left and right waves
         .leftRight{
             height: 70%;
             animation: waveAnimationRL .5s linear infinite;
@@ -100,6 +101,7 @@
         }
     }
 
+    //different animaton delays for each wave 
     .wave:nth-child(1){
         animation-delay: 0.7s;
     }
@@ -144,6 +146,7 @@
 
 
 
+    //container for audio player
     .song-player{
         width: 100vmin;
         height: 6vmin;
@@ -163,9 +166,7 @@
         opacity: .8;
     }
 
-
-
-
+    
 
 }
 

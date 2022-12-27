@@ -3,9 +3,9 @@ const albumCovers = document.querySelectorAll(".albumImg"),
 
 let isOpen = false
 
-
+//makes hidden cover images bigger and visible by adding class
 albumCovers.forEach(function(album,index){
-    album.addEventListener("click", (e)=>{
+    album.addEventListener("click", (e)=>{  
         if(!isOpen){
             biggerCovers[index].classList.add("coverActive")
         }
@@ -13,13 +13,14 @@ albumCovers.forEach(function(album,index){
     })
 })
 
+//closes bigger images by clicking on any place on the screen
 let clickCount = 0
 
 window.addEventListener("click", ()=>{
     closeBigAlbums()
-
 })
 
+//click count prevents immediate opening and closing of bigger image
 function closeBigAlbums(){
     if(isOpen){
         clickCount++

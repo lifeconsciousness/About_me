@@ -3,6 +3,7 @@ const menuBarIcon = document.querySelector(".menu-bar-icon"),
 
 let navbarIsOpen = false
 
+//makes mobile navbar functional
 menuBarIcon.addEventListener("click", (e)=>{
     e.preventDefault()
     if(!navbarIsOpen){

@@ -322,7 +322,7 @@ header .menu-bar-icon {
           backdrop-filter: blur(3px);
 }
 
-.line-container {
+.guitar-section {
   position: relative;
   overflow: hidden;
   width: 100vw;
@@ -368,7 +368,7 @@ svg {
   }
 }
 @media (max-width: 1050px) {
-  .line-container {
+  .guitar-section {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
@@ -565,6 +565,7 @@ svg {
 @media (max-width: 310px) {
   .songwriting-section .songwriting-text {
     margin: 0;
+    margin-top: 1.2em;
   }
 }
 .not-visible {

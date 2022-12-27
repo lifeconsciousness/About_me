@@ -1,11 +1,11 @@
-//image becoming larger on click
 let images = document.querySelectorAll(".imageThatCanBeLarger"),
-    containers = document.querySelectorAll(".containerForImage"),
-    songwritingText = document.querySelector(".songwriting-text"),
-    imageSelector = document.querySelector(".image-selector")
+containers = document.querySelectorAll(".containerForImage"),
+songwritingText = document.querySelector(".songwriting-text"),
+imageSelector = document.querySelector(".image-selector")
 
 let isEnabled = false;
 
+//image becoming larger on click
 for(let i = 0; i < images.length; i++){
     images[i].addEventListener("click", e =>{
         e.target.classList.toggle("photo-from-concert")
