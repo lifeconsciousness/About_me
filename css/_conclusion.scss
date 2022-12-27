@@ -1,13 +1,18 @@
 .mysong-section{
-    background-color: var(--green-third);
     height: 100vh;
+
+    // background-color: var(--green-third);       //green theme
     // background-color: var(--third-color);
-    // background-color: var(--green-new);
+    // background-color: var(--green-new);         
+
+    background-color: var(--blue);         //blue theme
+    color: var(--white-main);
 
     h2{
+        color: var(--white-main) !important;    //blue theme
+        
+        // color: black !important;         //green theme   
         text-align: center;
-        color: var(--white-main);
-        color: black !important;
     }
     p{
         font-size: .8em;

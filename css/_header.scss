@@ -41,7 +41,9 @@ header{
             height: 0.17em;
             transform: scale(0);
 
-            background-color: var(--third-color);
+            // background-color: var(--third-color);   //green theme
+            // background-color: rgb(30, 25, 191);   //green theme
+            background-color: rgb(42, 36, 227);   //green theme
 
             transform-origin: center;
             transition: opacity 270ms, transform 270ms;

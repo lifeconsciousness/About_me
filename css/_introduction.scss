@@ -118,7 +118,9 @@
     }
     button:hover{
         cursor: pointer;
-        background-color: var(--third-color);
+        // background-color: var(--third-color);    //green theme
+        background-color: rgb(40, 35, 197);
+        color: white;
     }
 
     .buttonAnimation{
