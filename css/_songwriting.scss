@@ -1,6 +1,9 @@
 //general section styling
 .songwriting-section{
     background-color: var(--white-main);
+    // min-height: 100vh !important;       //recent change
+    // padding-bottom: 4em !important;     //recent change
+
 
     .photo-from-concert{
         width: 60vmin;
@@ -27,6 +30,11 @@
     position: absolute;
     height: 100vh;
     transition: all 1s;
+}
+@media(max-width: 510px){               //recent margin changes
+    .img-container{
+        margin-bottom: 3em;
+    }
 }
 
 .larger-img{
@@ -99,6 +107,13 @@
         .songwriting-text{
             margin: 0;
             margin-top: 1.2em;
+        }
+    }
+}
+@media (max-width: 510px){
+    .songwriting-section{
+        .songwriting-text{
+            margin-bottom: 3em;
         }
     }
 }

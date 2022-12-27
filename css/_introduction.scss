@@ -23,6 +23,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 0.5fr 0.5fr;
     align-items: center;
+    padding-bottom: 4em !important;
 
 
     //big text styling and appearing from bottom animation
@@ -100,6 +101,13 @@
             min-height: 50px;
         }
 
+    }
+    @media (max-width: 350px){
+        .introduction-text{
+            p{
+                font-size: .8em;
+            }
+        }
     }
 
 

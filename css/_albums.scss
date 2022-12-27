@@ -5,6 +5,7 @@
     flex-direction: column;
     background-color: var(--black-main);
     color: white;
+    min-height: 110vh !important;       //recent change
 
     //text in the albums section
     .favourite-music-text{
