@@ -1,18 +1,4 @@
 
-.guitar-text{
-    max-width: 21em;
-    text-align: justify;
-    margin-bottom: 2em;
-
-    border-right: 2px black solid;
-    //border-left: 2px black solid;
-    padding: 1em;
-    z-index: 1000;
-    //background-color: rgba(255, 255, 255, 0.26);
-    backdrop-filter: blur(3px);
-}
-
-
 
 .guitar-section{
     position: relative;
@@ -29,7 +15,24 @@
 
 
     background-color: var(--white-main);
+    background-color: #fefeff;
 }
+
+
+.guitar-text{
+    max-width: 21em;
+    text-align: justify;
+    margin-bottom: 2em;
+
+    border-right: 2px black solid;
+    //border-left: 2px black solid;
+    padding: 1em;
+    z-index: 1000;
+    //background-color: rgba(255, 255, 255, 0.26);
+    backdrop-filter: blur(3px);
+}
+
+
 
 
 .svg-container{
