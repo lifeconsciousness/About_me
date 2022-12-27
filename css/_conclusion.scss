@@ -9,6 +9,11 @@
         color: var(--white-main);
         color: black !important;
     }
+    p{
+        font-size: .8em;
+        text-align: center;
+        opacity: .5;
+    }
 
     .song-selector{
         max-width: 100%;

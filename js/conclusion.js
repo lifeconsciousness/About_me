@@ -2,7 +2,7 @@ const waves = document.querySelectorAll(`.wave`),
       audioPlayer = document.querySelector(`.audio-player`)
 
 setTimeout(pauseWaves, 960)  
-audioPlayer.volume = 0.2
+audioPlayer.volume = 0.14
 
 audioPlayer.addEventListener(`play`, ()=>{
     playWaves()
@@ -21,7 +21,7 @@ function playWaves(){
 
 const songOptions = document.querySelectorAll(`.song`)
 const songSource = document.querySelector(`.song-source`)
-const songsArr = [`./audio/insomnia.mp3`,`./audio/The_Regular_Person-song_about_nothing.mp3`,`light tide.mp3`]
+const songsArr = [`./audio/insomnia.mp3`,`./audio/The_Regular_Person-song_about_nothing.mp3`]
 
 let prevSong = 1;
 

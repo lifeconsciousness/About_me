@@ -478,7 +478,7 @@ svg {
   }
   .albums-section .favourite-music-text h2 {
     padding-top: 1em;
-    font-size: 1em;
+    font-size: 1.34em;
   }
   .albums-section .favourite-music-text p {
     width: 90%;
@@ -605,6 +605,11 @@ svg {
   text-align: center;
   color: var(--white-main);
   color: black !important;
+}
+.mysong-section p {
+  font-size: 0.8em;
+  text-align: center;
+  opacity: 0.5;
 }
 .mysong-section .song-selector {
   max-width: 100%;
