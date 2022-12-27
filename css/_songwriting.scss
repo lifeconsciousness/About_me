@@ -1,0 +1,127 @@
+//general section styling
+.songwriting-section{
+    background-color: var(--white-main);
+
+    .photo-from-concert{
+        width: 60vmin;
+        border-radius: 2px;
+        aspect-ratio: 16/10.6;
+    }
+
+    .songwriting-text{
+        max-width: 21em;
+        text-align: justify;
+
+        border-right: 2px black solid;
+        padding: 1em;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}
+
+
+//classes for image becoming larger animation
+.img-container{
+    padding: 5em 3em;
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    transition: all 1s;
+}
+
+.larger-img{
+    width: 100%;
+    height: 82vh;
+    object-fit: cover;
+    transition: all 1s;
+    z-index: 300;
+}
+
+
+
+
+
+///image selector styling
+
+.containerForImage{
+    display: flex;
+    gap: 1em;
+
+    img:hover{
+        cursor: pointer;
+    }
+}
+
+.image-selector{
+    h3{
+        margin-bottom: .3em;
+    }
+    p{
+        margin-left: .8em;
+        margin-bottom: .3em;
+        font-size: 1.04em;
+    }
+    p:hover{
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+    }
+}
+
+@media (max-width: 570px){
+    .containerForImage{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2em;
+    }
+    .image-selector{
+        h3{
+            text-align: center;
+            font-size: 1em;
+        }
+        p{
+            text-align: center;
+            margin-left: 0;
+        }
+        p:active{
+            transform: scale(1.03);
+        }
+    }
+    
+    .songwriting-section{
+        .songwriting-text{
+            font-size: .9em;
+        }
+    }
+}
+@media (max-width: 310px){
+    .songwriting-section{
+        .songwriting-text{
+            margin: 0;
+            margin-top: 1.2em;
+        }
+    }
+}
+
+.not-visible{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+
+//animation that occurs after changing the image
+.animation-left{
+    animation: appearFromLeft .3s ease-in-out forwards;
+}
+
+@keyframes appearFromLeft{
+    from{
+        transform: translateX(-4%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
