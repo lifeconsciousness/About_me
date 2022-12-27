@@ -120,7 +120,7 @@ header .menu-bar-icon {
   grid-template-columns: 1fr;
   grid-template-rows: 2fr 0.5fr 0.5fr;
   align-items: center;
-  padding-bottom: 4em !important;
+  padding-bottom: 8em !important;
 }
 .introduction-section .greetingsText {
   overflow: hidden;
