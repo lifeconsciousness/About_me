@@ -471,7 +471,7 @@ svg {
 }
 .albums-section .coverActive {
   opacity: 1;
-  width: 41vw;
+  width: 34.5vw;
   border: 1px solid white;
   transition: all 1s;
 }
@@ -554,8 +554,7 @@ svg {
 }
 .image-selector p:hover {
   cursor: pointer;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
+  font-size: 1.25em;
 }
 
 @media (max-width: 570px) {
@@ -620,6 +619,11 @@ svg {
     transform: translateX(0%);
   }
 }
+.currentImage {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
 .mysong-section {
   height: 100vh;
   background-color: var(--blue);

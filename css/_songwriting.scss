@@ -70,8 +70,7 @@
     }
     p:hover{
         cursor: pointer;
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
+        font-size: 1.25em;
     }
 }
 
@@ -138,4 +137,10 @@
     to{
         transform: translateX(0%);
     }
+}
+
+
+.currentImage{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
 }

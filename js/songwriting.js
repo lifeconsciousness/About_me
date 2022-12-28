@@ -41,8 +41,13 @@ for(let i = 0; i < options.length; i++){
     options[i].addEventListener("click", (e)=>{
         tabs[prevElementIndex].style.display = "none"
         tabs[prevElementIndex].classList.remove("animation-left")
+        options[prevElementIndex].classList.remove(`currentImage`)
+
         tabs[i].style.display = "block"
         tabs[i].classList.add("animation-left")
+        options[i].classList.add(`currentImage`)
+
+
 
         prevElementIndex = i
     })
